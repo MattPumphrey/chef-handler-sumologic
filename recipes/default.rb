@@ -21,7 +21,6 @@ include_recipe 'chef_handler'
 
 gem_package 'rest-client' do
   gem_binary Chef::Util::PathHelper.join(Chef::Config.embedded_dir,'bin','gem')
-  version '< 1.8.0'
   action :install
 end
 
